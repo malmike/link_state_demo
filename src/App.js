@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TodoList from './TodoList';
+import Notes from './NoteComponent';
 
 const Header = () => (
   <header className="App-header">
@@ -14,6 +15,7 @@ const App = () => (
   <div className="App">
     <Header />
     <TodoList />
+    <Notes />
   </div>
 );
 

@@ -4,6 +4,7 @@ import assignIn from 'lodash/fp/assignIn';
 import map from 'lodash/fp/map';
 import reduce from 'lodash/fp/reduce';
 import { store as todoStore } from './TodoStore';
+import { store as noteStore } from './NoteStore';
 
 const reduceWithDefault = reduce.convert({
   cap: false
@@ -33,7 +34,7 @@ const mergeGet = attributeName =>
  * Locals Data Stores
  */
 
-const STORES = [todoStore];
+const STORES = [todoStore, noteStore];
 
 /**
  * Map the Mutation handlers and Default Values of our local state to
