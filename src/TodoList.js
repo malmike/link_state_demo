@@ -2,7 +2,7 @@ import React from 'react';
 import compose from 'recompose/compose';
 import withState from 'recompose/withState';
 
-import { withTodo } from './Client';
+import { withTodo } from './TodoStore';
 
 const TodoListPure = ({
   currentTodos,
